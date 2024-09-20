@@ -1,0 +1,22 @@
+/* Import Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+mat-card{
+    background-color: #fff;
+    margin-left: 61px;
+}
+
+    mat-card button{
+        background-color: #005d52;
+        font-family: 'Roboto', sans-serif;
+    }
+
+.navbar {
+    width: 61px; /* Set the width of the navbar */
+    background-color: #4C7573; /* Change to white for better visibility */
+    padding: 16px; /* Padding around the navbar */
+    position: fixed; /* Fix it on the side */
+    height: 100%; /* Full height */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for effect */
+    z-index: 1000; /* Ensure it is on top */
+    }

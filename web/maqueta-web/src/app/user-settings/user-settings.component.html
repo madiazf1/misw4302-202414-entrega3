@@ -1,1 +1,116 @@
-<p>user-settings works!</p>
+<div class="navbar">
+    <mat-list>
+      <mat-list-item>
+        <button mat-button color="primary">Button 1</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button color="primary">Button 2</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button color="primary">Button 3</button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+<mat-card>
+    <img 
+    src="assets/images/Alertify2.png" 
+    alt="Alertify2" 
+    />
+</mat-card>
+<mat-card>
+    <mat-card-header class="mx-auto">
+        <mat-card-title>Perfil de usuario</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="userSettingsForm">
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Usuario</mat-label>
+                    <input matInput placeholder="Usuario" formControlName="username"/>
+                    <mat-hint>Digite su usuario</mat-hint>
+                    <mat-error
+                        *ngIf="userSettingsFormData.password.errors?.required"
+                    >
+                    ¡Este campo es obligatorio!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Fecha de nacimiento</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="birthDate">
+                    <mat-hint>Escoja su fecha de nacimiento</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="userSettingsForm.get('birthDate').hasError('required') && userSettingsForm.get('birthDate').touched">
+                        ¡Fecha de nacimiento es requerida!
+                    </mat-error>
+                    <mat-error *ngIf="userSettingsForm.get('birthDate').hasError('matDatepickerParse') && userSettingsForm.get('birthDate').touched">
+                        ¡Formato de fecha inválido!
+                    </mat-error>
+                  </mat-form-field>                  
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" type="email" formControlName="email"/>
+                    <mat-error
+                        *ngIf="userSettingsFormData.email.errors?.required"
+                    >
+                        ¡Este campo es obligatorio!
+                    </mat-error>
+                    <mat-error
+                        *ngIf="userSettingsFormData.email.errors?.minlength"
+                    >
+                        ¡No cumple con longitud mínima!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
+                    <mat-error
+                        *ngIf="userSettingsFormData.password.errors?.required"
+                    >
+                        ¡Este campo es obligatorio!
+                    </mat-error>
+                    <mat-error
+                        *ngIf="userSettingsFormData.password.errors?.minlength"
+                    >
+                        ¡No cumple con longitud mínima!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-button id="saveButton">
+                    <mat-label>Guardar</mat-label>
+                </button>
+            </div>
+            <div>
+                <button mat-button id="cancelButton">
+                    <mat-label>Cancelar</mat-label>
+                </button>
+            </div>
+        </mat-card-content>
+    </form>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Eliminar cuenta</mat-card-title>
+    </mat-card-header>
+    <p>
+        Lamentamos que deje de usar nuestra app.
+    </p>
+    <p>
+        Antes de eliminar su cuenta por favor tenga en cuenta que es una acción permanente y por lo tanto no se puede deshacer.
+    </p>
+    <p>
+        Presione el botón a continuación para dar inicio al proceso de eliminación de cuenta, donde se brindará más información al respecto.
+    </p>
+    <div>
+        <button mat-button id="deleteButton">
+            <mat-label>Eliminar cuenta</mat-label>
+        </button>
+    </div>
+</mat-card>
