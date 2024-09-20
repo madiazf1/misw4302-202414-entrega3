@@ -11,14 +11,49 @@ import { ReportDetailComponent } from './report-detail/report-detail.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import { UserDeletionComponent } from './user-deletion/user-deletion.component';
 
+// import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [			
-    AppComponent, LoginComponent, SigninComponent, ReportComponent, ReportDetailComponent, UserSettingsComponent, UserDeletionComponent,
+    AppComponent, 
+    LoginComponent, 
+    SigninComponent, 
+    ReportComponent, 
+    ReportDetailComponent, 
+    UserSettingsComponent, 
+    UserDeletionComponent,
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTableModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatOptionModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
