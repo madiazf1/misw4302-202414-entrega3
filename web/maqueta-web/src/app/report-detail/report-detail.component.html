@@ -1,1 +1,67 @@
-<p>report-detail works!</p>
+<div class="navbar">
+    <mat-list>
+      <mat-list-item>
+        <img mat-card-image src="assets/images/menuIcon.png" alt="menu"/>
+      </mat-list-item>
+      <mat-list-item>
+        <img mat-card-image src="assets/images/userSettingsIcon.png" alt="user settings"/>
+      </mat-list-item>
+      <mat-list-item>
+        <img mat-card-image src="assets/images/closeSessionIcon.png" alt="close session"/>
+      </mat-list-item>
+    </mat-list>
+</div>
+
+<mat-card>
+    <img 
+    src="assets/images/Alertify2.png" 
+    alt="Alertify2" 
+    />
+    <mat-card-content>
+        <div>
+            <h3>Nombre de alarma</h3>
+            <mat-form-field>
+                <mat-label>Alarma 1</mat-label>
+                <input matInput disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <h3>Fecha de pago</h3>
+            <mat-form-field>
+                <mat-label>25/01/2025</mat-label>
+                <input matInput disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <h3>Tipo de obligación</h3>
+            <mat-form-field>
+                <mat-label>Arriendo</mat-label>
+                <input matInput disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <h3>Valor</h3>
+            <mat-form-field>
+                <mat-label>$2 000 000</mat-label>
+                <input matInput disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <h3>¿Generado por IA?</h3>
+            <mat-checkbox [disabled]="true" [checked]="true"></mat-checkbox>
+        </div>
+        <div>
+            <h3>Banco</h3>
+            <mat-form-field>
+                <mat-label>Bancolombia</mat-label>
+                <input matInput disabled>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+</mat-card>
+<mat-card>
+    <img
+        src="assets/images/DocumentoSoporte.png" 
+        alt="documentoSoporte" 
+    />
+</mat-card>
