@@ -1,25 +1,44 @@
 <div class="navbar">
   <mat-list>
     <mat-list-item>
-      <img mat-card-image src="assets/images/menuIcon.png" alt="menu"/>
+      <img mat-card-image 
+        src="assets/images/menuIcon.png" 
+        alt="menu"
+        id="menuIcon"
+      />
     </mat-list-item>
     <mat-list-item>
-      <img mat-card-image src="assets/images/userSettingsIcon.png" alt="user settings"/>
+      <img mat-card-image 
+        src="assets/images/userSettingsIcon.png" 
+        alt="user settings"
+        id="userSettingsIcon"
+      />
     </mat-list-item>
+    <div class="text-container">
+      <div class="overlay-text">Gestión Cuenta</div>
+    </div>
     <mat-list-item>
-      <img mat-card-image src="assets/images/closeSessionIcon.png" alt="close session"/>
+      <img mat-card-image 
+        src="assets/images/closeSessionIcon.png" 
+        alt="close session"
+        id="closeSessionIcon"
+      />
     </mat-list-item>
+    <div class="text-container">
+      <div class="overlay-text">Cerrar Sesión</div>
+    </div>
   </mat-list>
 </div>
 
 <mat-card>
-    <img 
+    <img
+    class="alertify-title" 
     src="assets/images/Alertify2.png" 
     alt="Alertify2" 
     />
 </mat-card>
 
-<mat-card>
+<mat-card id="table">
     <mat-card-header class="mx-auto">
         <mat-card-title>Reporte - Histórico de Pagos</mat-card-title>
     </mat-card-header>
