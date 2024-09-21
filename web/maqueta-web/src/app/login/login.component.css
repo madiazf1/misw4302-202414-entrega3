@@ -2,10 +2,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 mat-card{
-    background-color: #fff;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
+    #logo {
+        display: flex;
+        width: 370px;
+        height: 370px;
+        position: absolute;
+        top: 200px;
+        left: 480px;
+    }
+
+    mat-card.loginCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 200px;
+        left: 1090px;
+        width: 350px;
+    }
+
+    mat-card.loginOthers {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: 1090px;
+        width: 188px;
+        height: 210px;
+    }
+
+    mat-card-content.otherLogins {
+        padding-left: 5px;
+    }
+
+        .buttonContainer {
+            position: relative;
+            top: 40px;
+            width: 100%; /* Full width for the button container */
+            display: flex; /* Use Flexbox for button alignment */
+            justify-content: flex-start; /* Align button to the left */
+            margin-top: 10px; /* Optional: space above the button */
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .image-container{
+            position: relative;
+            top: 5px;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+        }
+
+            #IngresariCloud {
+                width: 55px;
+                height: 55px;
+            }
+
+            #IngresarGoogle {
+                width: 60px;
+                height: 60px;
+            }
+
+    mat-form-field {
+        position: relative;
+        width: 345px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        background-color: #e2e2e2 !important; /* Replace with your desired color */
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: #5e5e5e !important;
+    }
+
+    .mdc-line-ripple {
+        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+    }
+
+    input {
+        color: #5e5e5e; 
+    }
+
+    mat-label.formLabel {
+        color: #5e5e5e;
+    }
+
+    mat-hint {
+        color: #c6c6c6;
+    }
+
     mat-card button{
-        background-color: #005d52;
-        font-family: 'Roboto', sans-serif;
+        color: white !important; 
+        background-color: #005d52 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px !important;
+        border-radius: 100px !important;
+        width: 160px !important;
+        height: 40px !important;
+        white-space: nowrap !important;
+        letter-spacing: 0px !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
     }

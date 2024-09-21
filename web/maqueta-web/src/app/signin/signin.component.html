@@ -1,8 +1,11 @@
-<img 
-    src="assets/images/Alertify.png" 
-    alt="Alertify" 
-/>
-<mat-card>
+<mat-card id="logo">
+    <img 
+        src="assets/images/Alertify.png" 
+        alt="IngresariCloud" 
+    />
+</mat-card>
+
+<mat-card class="signinCard">
     <mat-card-header class="mx-auto">
         <mat-card-title>Cree su cuenta</mat-card-title>
     </mat-card-header>
@@ -10,7 +13,7 @@
         <mat-card-content>
             <div>
                 <mat-form-field>
-                    <mat-label>Usuario</mat-label>
+                    <mat-label class="formLabel">Usuario</mat-label>
                     <input matInput placeholder="Usuario" formControlName="username"/>
                     <mat-hint>Digite su usuario</mat-hint>
                     <mat-error
@@ -22,10 +25,10 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Fecha de nacimiento</mat-label>
+                    <mat-label class="formLabel">Fecha de nacimiento</mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="birthDate">
                     <mat-hint>Escoja su fecha de nacimiento</mat-hint>
-                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker" class="custom-datepicker-toggle"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                     <mat-error *ngIf="signinForm.get('birthDate').hasError('required') && signinForm.get('birthDate').touched">
                         ¡Fecha de nacimiento es requerida!
@@ -37,7 +40,7 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Email</mat-label>
+                    <mat-label class="formLabel">Email</mat-label>
                     <input matInput placeholder="Email" type="email" formControlName="email"/>
                     <mat-error
                         *ngIf="signinFormData.email.errors?.required"
@@ -53,7 +56,7 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Contraseña</mat-label>
+                    <mat-label class="formLabel">Contraseña</mat-label>
                     <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
                     <mat-error
                         *ngIf="signinFormData.password.errors?.required"
@@ -68,8 +71,8 @@
                 </mat-form-field>
             </div>
             <div>
-                <button mat-button formControlName="signinButton">
-                    <mat-label>Ingresar</mat-label>
+                <button mat-button formControlName="signinButton" class="signinButton">
+                    <mat-label class="buttonLabel">Crear cuenta</mat-label>
                 </button>
             </div>
         </mat-card-content>
