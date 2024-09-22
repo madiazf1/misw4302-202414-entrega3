@@ -1,22 +1,132 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-mat-card{
-    background-color: #fff;
-    margin-left: 61px;
-}
-
-    mat-card button{
-        background-color: #005d52;
-        font-family: 'Roboto', sans-serif;
-    }
-
 .navbar {
     width: 61px; /* Set the width of the navbar */
     background-color: #4C7573; /* Change to white for better visibility */
-    padding: 16px; /* Padding around the navbar */
+    padding: 0px; /* Padding around the navbar */
     position: fixed; /* Fix it on the side */
     height: 100%; /* Full height */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for effect */
     z-index: 1000; /* Ensure it is on top */
+    }
+
+mat-list{
+    position: absolute;
+    top: 50px;
+}
+
+mat-list-item{
+    height: 45px !important;
+    padding-left: 17px;
+}
+
+    .text-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        height: 40px;
+    }
+
+    .overlay-text {
+        font-size: 12px;
+        text-align: center; /* Center text within the div */
+        color: #e2e2e2; /* Text color */
+        font-weight: 580;
+        white-space: normal; /* Allow text to wrap */
+        word-wrap: break-word; /* Break long words if necessary */
+        line-height: 1.2;
+    }
+
+mat-card{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+    mat-card-header{
+        padding-bottom: 30px !important;
+    }
+
+    mat-card.deleteUserAccountCard{
+        position:absolute;
+        margin-left: 420px;
+        width: 950px;
+        top: 180px;
+    }
+
+    mat-card.alertifyTitle {
+        margin-left: 103px;
+        height: 100px !important;
+        width: 270px;
+        position: relative;
+        top: 20px;
+    }
+
+    input {
+        color: #5e5e5e; 
+    }
+
+        mat-card-content.deleteForm{
+            padding-top: 58px !important;
+            padding-left: 0px;
+            padding-bottom: 0px !important;
+        }
+
+        li {
+            padding-bottom: 20px !important ;
+        }
+
+    mat-label.formLabel {
+        color: #5e5e5e;
+    }
+
+    mat-hint {
+        color: #c6c6c6;
+    }
+
+    mat-form-field {
+        position: relative;
+        width: 345px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .mdc-line-ripple {
+        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        background-color: #e2e2e2 !important;
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: #5e5e5e !important;
+    }
+
+div.buttonContainer{
+    display: flex;
+    gap: 25px;
+}
+
+button.generalButton{
+    color: white !important;
+    font-family: 'Roboto', sans-serif !important;
+    width: 160px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+    border-radius: 100px !important;
+    white-space: nowrap !important;
+    letter-spacing: 0px !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; 
+}
+
+    button#cancelButton{
+        margin-top: 20px;
+        background-color: #005d52 !important;
+    }
+
+    button#deleteButton{
+        margin-top: 20px;
+        background-color: #D34F12 !important;
     }

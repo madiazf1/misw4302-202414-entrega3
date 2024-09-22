@@ -1,65 +1,89 @@
 <div class="navbar">
     <mat-list>
       <mat-list-item>
-        <img mat-card-image src="assets/images/menuIcon.png" alt="menu"/>
+        <img mat-card-image 
+          src="assets/images/menuIcon.png" 
+          alt="menu"
+          id="menuIcon"
+        />
       </mat-list-item>
       <mat-list-item>
-        <img mat-card-image src="assets/images/userSettingsIcon.png" alt="user settings"/>
+        <img mat-card-image 
+          src="assets/images/userSettingsIcon.png" 
+          alt="user settings"
+          id="userSettingsIcon"
+        />
       </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Gestión Cuenta</div>
+      </div>
       <mat-list-item>
-        <img mat-card-image src="assets/images/closeSessionIcon.png" alt="close session"/>
+        <img mat-card-image 
+          src="assets/images/closeSessionIcon.png" 
+          alt="close session"
+          id="closeSessionIcon"
+        />
       </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Cerrar Sesión</div>
+      </div>
     </mat-list>
 </div>
 
-<mat-card>
-    <img 
+<mat-card class="alertifyTitle">
+    <img
+    class="alertify-title" 
     src="assets/images/Alertify2.png" 
     alt="Alertify2" 
     />
 </mat-card>
-<mat-card>
-    <mat-card-header>
+
+<mat-card class="deleteUserAccountCard">
+    <mat-card-header class="deleteUserAccountTitle">
         <mat-card-title>Eliminar cuenta</mat-card-title>
     </mat-card-header>
     
-    <p>Nos duele que continue con el proceso de eliminación de cuenta.</p>
+    <mat-card-content>
+        <p>Nos duele que continue con el proceso de eliminación de cuenta.</p>
 
-    <p>Es importante enfatizar en las implicaciones de eliminar la cuenta, que se listan a continuación:</p>
-    
-    <ul>
-        <li>Irreversibilidad: al eliminarse la cuenta, esta no podrá ser restaurada ya que la información asociada ha sido eliminada.</li>
-        <li>Pérdida de datos: al eliminarse la cuenta, la información personal asociada a la cuenta, los datos asociados a la aplicación y la personalización de la aplicación tanto web como móvil serán todos eliminados.</li>
-        <li>Acceso y uso de la aplicación móvil: el acceso y uso de la aplicación móvil no será posible una vez la cuenta haya sido eliminada.</li>
-    </ul>
-    
-    
-    <p>Si entiende y está de acuerdo con asumir las implicaciones ya mencionadas entonces por favor digite su contraseña como muestra de confirmación para eliminar la cuenta.</p>
-    
-    <form [formGroup]="userDeletionForm">
-        <mat-card-content>
-            <div>
-                <mat-form-field>
-                    <mat-label>Contraseña</mat-label>
-                    <mat-hint>Digite su contraseña</mat-hint>
-                    <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
-                    <mat-error
-                        *ngIf="userDeletionFormData.password.errors?.required"
-                    >
-                        ¡Este campo es obligatorio!
-                    </mat-error>
-                    <mat-error
-                        *ngIf="userDeletionFormData.password.errors?.minlength"
-                    >
-                        ¡No cumple con longitud mínima!
-                    </mat-error>
-                </mat-form-field>
-            </div>
-            <div>
-                <button mat-button id="deleteButton">
-                    <mat-label>Eliminar cuenta</mat-label>
-                </button>
-            </div>
-        </mat-card-content>
-    </form>
+        <p>Es importante enfatizar en las implicaciones de eliminar la cuenta, que se listan a continuación:</p>
+        
+        <ul>
+            <li>Irreversibilidad: al eliminarse la cuenta, esta no podrá ser restaurada ya que la información asociada ha sido eliminada.</li>
+            <li>Pérdida de datos: al eliminarse la cuenta, la información personal asociada a la cuenta, los datos asociados a la aplicación y la personalización de la aplicación tanto web como móvil serán todos eliminados.</li>
+            <li>Acceso y uso de la aplicación móvil: el acceso y uso de la aplicación móvil no será posible una vez la cuenta haya sido eliminada.</li>
+        </ul>
+        
+        <p>Si entiende y está de acuerdo con asumir las implicaciones ya mencionadas entonces por favor digite su contraseña como muestra de confirmación para eliminar la cuenta.</p>
+
+        <form [formGroup]="userDeletionForm">
+            <mat-card-content class="deleteForm">
+                <div>
+                    <mat-form-field>
+                        <mat-label class="formLabel">Contraseña</mat-label>
+                        <mat-hint>Digite su contraseña</mat-hint>
+                        <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
+                        <mat-error
+                            *ngIf="userDeletionFormData.password.errors?.required"
+                        >
+                            ¡Este campo es obligatorio!
+                        </mat-error>
+                        <mat-error
+                            *ngIf="userDeletionFormData.password.errors?.minlength"
+                        >
+                            ¡No cumple con longitud mínima!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+        </form>
+        <div class="buttonContainer">
+            <button mat-button class="generalButton" id="deleteButton">
+                <mat-label>Eliminar Cuenta</mat-label>
+            </button>
+            <button mat-button class="generalButton" id="cancelButton">
+                <mat-label>Cancelar</mat-label>
+            </button>
+        </div>
+    </mat-card-content>
 </mat-card>

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-user-deletion',
   templateUrl: './user-deletion.component.html',
-  styleUrls: ['./user-deletion.component.css']
+  styleUrls: ['./user-deletion.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class UserDeletionComponent {
 
