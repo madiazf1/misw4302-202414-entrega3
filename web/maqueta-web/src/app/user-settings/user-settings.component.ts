@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class UserSettingsComponent implements OnInit {
+  
+  isOverlayVisible = false;
+  
   userSettingsForm: FormGroup;
   constructor(private formBuilder: FormBuilder, private router: Router){}
 
@@ -18,7 +21,11 @@ export class UserSettingsComponent implements OnInit {
   }
 
   saveChanges() {
-    // overlay here
+    this.isOverlayVisible = true;
+
+    setTimeout(() => {
+        this.isOverlayVisible = false;
+    }, 1000); // Show overlay for 1 second
   }
 
   cancelChanges(){
