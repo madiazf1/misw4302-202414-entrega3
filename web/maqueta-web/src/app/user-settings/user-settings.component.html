@@ -1,32 +1,52 @@
 <div class="navbar">
     <mat-list>
       <mat-list-item>
-        <img mat-card-image src="assets/images/menuIcon.png" alt="menu"/>
+        <img mat-card-image 
+          src="assets/images/menuIcon.png" 
+          alt="menu"
+          id="menuIcon"
+        />
       </mat-list-item>
       <mat-list-item>
-        <img mat-card-image src="assets/images/userSettingsIcon.png" alt="user settings"/>
+        <img mat-card-image 
+          src="assets/images/userSettingsIcon.png" 
+          alt="user settings"
+          id="userSettingsIcon"
+        />
       </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Gestión Cuenta</div>
+      </div>
       <mat-list-item>
-        <img mat-card-image src="assets/images/closeSessionIcon.png" alt="close session"/>
+        <img mat-card-image 
+          src="assets/images/closeSessionIcon.png" 
+          alt="close session"
+          id="closeSessionIcon"
+        />
       </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Cerrar Sesión</div>
+      </div>
     </mat-list>
 </div>
 
-<mat-card>
-    <img 
+<mat-card class="alertifyTitle">
+    <img
+    class="alertify-title" 
     src="assets/images/Alertify2.png" 
     alt="Alertify2" 
     />
 </mat-card>
-<mat-card>
-    <mat-card-header class="mx-auto">
+
+<mat-card class="userSettingsCard">
+    <mat-card-header class="userSettingsTitle">
         <mat-card-title>Perfil de usuario</mat-card-title>
     </mat-card-header>
     <form [formGroup]="userSettingsForm">
         <mat-card-content>
             <div>
                 <mat-form-field>
-                    <mat-label>Usuario</mat-label>
+                    <mat-label class="formLabel">Usuario</mat-label>
                     <input matInput placeholder="Usuario" formControlName="username"/>
                     <mat-hint>Digite su usuario</mat-hint>
                     <mat-error
@@ -38,7 +58,7 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Fecha de nacimiento</mat-label>
+                    <mat-label class="formLabel">Fecha de nacimiento</mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="birthDate">
                     <mat-hint>Escoja su fecha de nacimiento</mat-hint>
                     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
@@ -53,8 +73,9 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Email</mat-label>
+                    <mat-label class="formLabel">Email</mat-label>
                     <input matInput placeholder="Email" type="email" formControlName="email"/>
+                    <mat-hint>Digite su correo eletrónico</mat-hint>
                     <mat-error
                         *ngIf="userSettingsFormData.email.errors?.required"
                     >
@@ -69,8 +90,9 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Contraseña</mat-label>
+                    <mat-label class="formLabel">Contraseña</mat-label>
                     <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
+                    <mat-hint>Digite su contraseña</mat-hint>
                     <mat-error
                         *ngIf="userSettingsFormData.password.errors?.required"
                     >
@@ -83,21 +105,20 @@
                     </mat-error>
                 </mat-form-field>
             </div>
-            <div>
-                <button mat-button id="saveButton">
+            <div class="buttonContainer">
+                <button mat-button class="generalButton" id="saveButton">
                     <mat-label>Guardar</mat-label>
                 </button>
-            </div>
-            <div>
-                <button mat-button id="cancelButton">
+                <button mat-button class="generalButton" id="cancelButton">
                     <mat-label>Cancelar</mat-label>
                 </button>
             </div>
         </mat-card-content>
     </form>
 </mat-card>
-<mat-card>
-    <mat-card-header>
+
+<mat-card class="deleteUserAccount">
+    <mat-card-header class="deleteUserAccountTitle">
         <mat-card-title>Eliminar cuenta</mat-card-title>
     </mat-card-header>
     <p>
@@ -110,7 +131,7 @@
         Presione el botón a continuación para dar inicio al proceso de eliminación de cuenta, donde se brindará más información al respecto.
     </p>
     <div>
-        <button mat-button id="deleteButton">
+        <button mat-button class="generalButton" id="deleteUserAccountButton">
             <mat-label>Eliminar cuenta</mat-label>
         </button>
     </div>
