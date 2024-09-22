@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit{
   
+  isOverlayVisible = false;
+
   loginForm: FormGroup;
   constructor(private formBuilder: FormBuilder, private router: Router) {}
 
@@ -19,8 +21,14 @@ export class LoginComponent implements OnInit{
   }
 
   navigateToReport() {
-    this.router.navigate(['/report']);
+    this.isOverlayVisible = true;
+
+    setTimeout(() => {
+        this.isOverlayVisible = false;
+        this.router.navigate(['/report']);
+    }, 1000); // Show overlay for 1 second
   }
+
 
   get loginFormData(){
     return this.loginForm.controls;
