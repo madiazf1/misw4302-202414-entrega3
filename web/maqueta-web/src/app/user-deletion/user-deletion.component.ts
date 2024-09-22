@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class UserDeletionComponent {
 
+  isOverlayVisible = false;
+
   userDeletionForm: FormGroup;
   constructor(private formBuilder: FormBuilder, private router: Router){}
 
@@ -19,7 +21,12 @@ export class UserDeletionComponent {
   }
 
   navigateToUserSettings() {
-    this.router.navigate(['/user-settings']);
+    this.isOverlayVisible = true;
+
+    setTimeout(() => {
+        this.isOverlayVisible = false;
+        this.router.navigate(['/user-settings']);
+    }, 1000); // Show overlay for 1 second
   }
 
   get userDeletionFormData(){

@@ -135,3 +135,21 @@ button.generalButton{
         margin-top: 20px;
         background-color: #D34F12 !important;
     }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it appears above other content */
+        }
+        
+        .overlay img {
+        max-width: 15%;
+        max-height: 15%;
+        }
