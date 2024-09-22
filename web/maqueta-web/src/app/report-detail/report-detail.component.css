@@ -1,26 +1,134 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-mat-card{
-    background-color: #fff;
-    margin-left: 61px;
-}
-
-    mat-card button{
-        background-color: #005d52;
-        font-family: 'Roboto', sans-serif;
-    }
-
 .navbar {
     width: 61px; /* Set the width of the navbar */
     background-color: #4C7573; /* Change to white for better visibility */
-    padding: 16px; /* Padding around the navbar */
+    padding: 0px; /* Padding around the navbar */
     position: fixed; /* Fix it on the side */
     height: 100%; /* Full height */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for effect */
     z-index: 1000; /* Ensure it is on top */
     }
 
-mat-checkbox {
-    background-color: #005d52;
+    mat-list{
+        position: absolute;
+        top: 50px;
+    }
+
+    mat-list-item{
+        height: 45px !important;
+        padding-left: 17px;
+    }
+
+        .text-container {
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            height: 40px;
+        }
+
+        .overlay-text {
+            font-size: 12px;
+            text-align: center; /* Center text within the div */
+            color: #e2e2e2; /* Text color */
+            font-weight: 580;
+            white-space: normal; /* Allow text to wrap */
+            word-wrap: break-word; /* Break long words if necessary */
+            line-height: 1.2;
+        }
+
+mat-card{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
+
+    mat-card.alertifyTitle {
+        margin-left: 103px;
+        height: 100px;
+        width: 270px;
+        position: relative;
+        top: 20px;
+    }
+
+    mat-card-title{
+        font-size: 24px !important;
+        padding-bottom: 45px;
+    }
+
+    mat-card-header.alarmDetailTitle{
+        padding-top: 0px !important;
+    }
+
+    mat-card-header.supportDocumentTitle{
+        padding: 0px !important;
+    }
+
+    mat-card.alarmDetail{
+        position:absolute;
+        margin-left: 420px;
+        top: 150px;
+    }
+
+    mat-card.supportDocument{
+        position:absolute;
+        margin-left: 1030px;
+        top: 150px;
+        height: 700px;
+        width: auto;
+    }
+
+    mat-card-content{
+        padding-top: 0px !important;
+    }
+
+mat-form-field {
+    position: relative;
+    width: 345px;
+    height: auto;
+}
+
+    :root{
+        --mdc-filled-text-field-disabled-container-color: #e2e2e2;
+    }
+
+    .mdc-line-ripple {
+        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        background-color: #e2e2e2 !important;
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: #5e5e5e !important;
+    }
+
+    input {
+        color: #5e5e5e !important; 
+    }
+
+    mat-label.formLabel {
+        color: #5e5e5e;
+    }
+
+    mat-hint {
+        color: #c6c6c6;
+    }
+
+mat-checkbox {
+    background-color: #005d52; /* Keep this if you want a background */
+    width: 24px; 
+    height: 24px; 
+    display: flex; /* Ensure it can be sized correctly */
+    margin-top: 2px;
+}
+
+    .checkboxContainer {
+        display: flex;
+        gap: 35px;
+    }
+
+    .mat-mdc-checkbox {
+        --mdc-checkbox-state-layer-size: 24px;
+      }
