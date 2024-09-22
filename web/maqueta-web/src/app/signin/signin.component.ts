@@ -11,11 +11,18 @@ import { Router } from '@angular/router';
 })
 export class SigninComponent implements OnInit {
 
+  isOverlayVisible = false;
+
   signinForm: FormGroup;
   constructor(private formBuilder: FormBuilder, private router: Router){}
 
   navigateToLogIn() {
-    this.router.navigate(['/login']);
+    this.isOverlayVisible = true;
+
+    setTimeout(() => {
+        this.isOverlayVisible = false;
+        this.router.navigate(['/login']);
+    }, 1000); // Show overlay for 1 second
   }
 
   get signinFormData(){
