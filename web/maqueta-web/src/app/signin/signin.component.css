@@ -90,6 +90,7 @@
 }
 
 :root {
+    --mat-datepicker-calendar-container-background-color: #e2e2e2;
     --mat-datepicker-toggle-active-state-icon-color: #005d52 !important;
     --mat-datepicker-toggle-icon-color: #5e5e5e;
     --mat-datepicker-calendar-date-text-color: #5e5e5e;
