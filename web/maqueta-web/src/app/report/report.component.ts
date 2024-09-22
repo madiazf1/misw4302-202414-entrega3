@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface RowData {
   col1: string;
@@ -24,5 +25,11 @@ export class ReportComponent {
       { col1: 'Alarma 1', col2: '25/01/2025', col3: 'Arriendo', col4: '$2 000 000', col5: 'Bancolombia'},
       { col1: 'Alarma 1', col2: '25/01/2025', col3: 'Arriendo', col4: '$2 000 000', col5: 'Bancolombia'}
   ];
+
+  constructor(private router: Router) {}
+
+  navigateToComponent() {
+    this.router.navigate(['/report-detail']);
+  }
 
 }

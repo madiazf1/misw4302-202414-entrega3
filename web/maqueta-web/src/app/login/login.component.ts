@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,15 @@ import { ViewEncapsulation } from '@angular/core';
 export class LoginComponent implements OnInit{
   
   loginForm: FormGroup;
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
+
+  navigateToSignIn() {
+    this.router.navigate(['/signin']);
+  }
+
+  navigateToReport() {
+    this.router.navigate(['/report']);
+  }
 
   get loginFormData(){
     return this.loginForm.controls;

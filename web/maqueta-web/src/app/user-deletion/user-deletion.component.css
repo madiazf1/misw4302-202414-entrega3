@@ -11,6 +11,11 @@
     z-index: 1000; /* Ensure it is on top */
     }
 
+    .image-button {
+        display: inline-block; /* Adjust as necessary */
+        cursor: pointer;
+      }
+
 mat-list{
     position: absolute;
     top: 50px;

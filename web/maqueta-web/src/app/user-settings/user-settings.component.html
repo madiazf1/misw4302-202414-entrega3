@@ -1,34 +1,40 @@
 <div class="navbar">
     <mat-list>
       <mat-list-item>
-        <img mat-card-image 
-          src="assets/images/menuIcon.png" 
-          alt="menu"
-          id="menuIcon"
-        />
+        <a [routerLink]="['/report']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/menuIcon.png" 
+            alt="menu"
+            id="menuIcon"
+          />
+        </a>
       </mat-list-item>
       <mat-list-item>
-        <img mat-card-image 
-          src="assets/images/userSettingsIcon.png" 
-          alt="user settings"
-          id="userSettingsIcon"
-        />
+        <a [routerLink]="['/user-settings']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/userSettingsIcon.png" 
+            alt="user settings"
+            id="userSettingsIcon"
+          />
+        </a>
       </mat-list-item>
       <div class="text-container">
         <div class="overlay-text">Gestión Cuenta</div>
       </div>
       <mat-list-item>
-        <img mat-card-image 
-          src="assets/images/closeSessionIcon.png" 
-          alt="close session"
-          id="closeSessionIcon"
-        />
+        <a [routerLink]="['/login']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/closeSessionIcon.png" 
+            alt="close session"
+            id="closeSessionIcon"
+          />
+        </a>
       </mat-list-item>
       <div class="text-container">
         <div class="overlay-text">Cerrar Sesión</div>
       </div>
     </mat-list>
-</div>
+  </div>
 
 <mat-card class="alertifyTitle">
     <img
@@ -106,10 +112,10 @@
                 </mat-form-field>
             </div>
             <div class="buttonContainer">
-                <button mat-button class="generalButton" id="saveButton">
+                <button mat-button (click)="saveChanges()" class="generalButton" id="saveButton">
                     <mat-label>Guardar</mat-label>
                 </button>
-                <button mat-button class="generalButton" id="cancelButton">
+                <button mat-button (click)="cancelChanges()" class="generalButton" id="cancelButton">
                     <mat-label>Cancelar</mat-label>
                 </button>
             </div>
@@ -131,7 +137,7 @@
         Presione el botón a continuación para dar inicio al proceso de eliminación de cuenta, donde se brindará más información al respecto.
     </p>
     <div>
-        <button mat-button class="generalButton" id="deleteUserAccountButton">
+        <button mat-button (click)="navigateToDeletion()" class="generalButton" id="deleteUserAccountButton">
             <mat-label>Eliminar cuenta</mat-label>
         </button>
     </div>

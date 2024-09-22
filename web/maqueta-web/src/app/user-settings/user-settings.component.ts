@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-settings',
@@ -10,10 +11,22 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class UserSettingsComponent implements OnInit {
   userSettingsForm: FormGroup;
-  constructor(private formBuilder: FormBuilder){}
+  constructor(private formBuilder: FormBuilder, private router: Router){}
 
   get userSettingsFormData(){
     return this.userSettingsForm.controls;
+  }
+
+  saveChanges() {
+    // overlay here
+  }
+
+  cancelChanges(){
+    this.router.navigate(['/report']);
+  }
+
+  navigateToDeletion() {
+    this.router.navigate(['/user-deletion']);
   }
 
   ngOnInit(): void {

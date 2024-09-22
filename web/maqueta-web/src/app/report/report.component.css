@@ -86,3 +86,8 @@ mat-card{
             width: 160px;
             height: 40px;
         }
+
+        .image-button {
+            display: inline-block; /* Adjust as necessary */
+            cursor: pointer;
+          }

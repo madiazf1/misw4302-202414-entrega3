@@ -14,6 +14,8 @@ const routes: Routes = [
   {path: 'report-detail', component: ReportDetailComponent},
   {path: 'user-settings', component: UserSettingsComponent},
   {path: 'user-deletion', component: UserDeletionComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: 'home', component: LoginComponent}
 ];
 
 @NgModule({

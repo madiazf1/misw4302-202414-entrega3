@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-deletion',
@@ -11,7 +12,15 @@ import { ViewEncapsulation } from '@angular/core';
 export class UserDeletionComponent {
 
   userDeletionForm: FormGroup;
-  constructor(private formBuilder: FormBuilder){}
+  constructor(private formBuilder: FormBuilder, private router: Router){}
+
+  navigateToLogIn() {
+    this.router.navigate(['/login']);
+  }
+
+  navigateToUserSettings() {
+    this.router.navigate(['/user-settings']);
+  }
 
   get userDeletionFormData(){
     return this.userDeletionForm.controls;

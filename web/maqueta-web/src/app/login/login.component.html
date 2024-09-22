@@ -42,7 +42,7 @@
                 </mat-form-field>
             </div>
             <div>
-                <button mat-button id="loginButton">
+                <button mat-button (click)="navigateToReport()" id="loginButton">
                     <mat-label class="buttonLabel">Ingresar</mat-label>
                 </button>
             </div>
@@ -67,7 +67,7 @@
             />
         </div>
         <div class="buttonContainer">
-            <button mat-button id="createAccountButton">
+            <button mat-button (click)="navigateToSignIn()" id="createAccountButton">
                 <mat-label class="buttonLabel">Cree una cuenta aquí</mat-label>
             </button>
         </div>

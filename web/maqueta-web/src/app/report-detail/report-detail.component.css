@@ -11,6 +11,11 @@
     z-index: 1000; /* Ensure it is on top */
     }
 
+    .image-button {
+        display: inline-block; /* Adjust as necessary */
+        cursor: pointer;
+      }
+
     mat-list{
         position: absolute;
         top: 50px;
@@ -122,6 +127,7 @@ mat-checkbox {
     height: 24px; 
     display: flex; /* Ensure it can be sized correctly */
     margin-top: 2px;
+    border-radius: 2px;
 }
 
     .checkboxContainer {
@@ -132,3 +138,9 @@ mat-checkbox {
     .mat-mdc-checkbox {
         --mdc-checkbox-state-layer-size: 24px;
       }
+
+    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:checked~.mdc-checkbox__background,
+    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:indeterminate~.mdc-checkbox__background,
+    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true][disabled]~.mdc-checkbox__background {
+        background-color: transparent !important; 
+    }
