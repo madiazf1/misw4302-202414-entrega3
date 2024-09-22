@@ -1,154 +1,155 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-mat-card{
+.signin-component mat-card {
     background-color: transparent !important;
     box-shadow: none !important;
 }
 
-    #logo {
-        display: flex;
-        width: 370px;
-        height: 370px;
-        position: absolute;
-        top: 200px;
-        left: 480px;
-    }
+.signin-component #logo {
+    display: flex;
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 200px;
+    left: 480px;
+}
 
-    mat-card.signinCard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 200px;
-        left: 1090px;
-        width: 350px;
-    }
+.signin-component mat-card.signinCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 1090px;
+    width: 350px;
+}
 
-    mat-card-content.otherLogins {
-        padding-left: 5px;
-    }
+.signin-component mat-card-content.otherLogins {
+    padding-left: 5px;
+}
 
-        .buttonContainer {
-            position: relative;
-            top: 40px;
-            width: 100%; /* Full width for the button container */
-            display: flex; /* Use Flexbox for button alignment */
-            justify-content: flex-start; /* Align button to the left */
-            margin-top: 10px; /* Optional: space above the button */
-            margin-left: 0;
-            padding: 0;
-        }
+.signin-component .buttonContainer {
+    position: relative;
+    top: 40px;
+    width: 100%; /* Full width for the button container */
+    display: flex; /* Use Flexbox for button alignment */
+    justify-content: flex-start; /* Align button to the left */
+    margin-top: 10px; /* Optional: space above the button */
+    margin-left: 0;
+    padding: 0;
+}
 
-        .image-container{
-            position: relative;
-            top: 5px;
-            display: flex;
-            justify-content: center;
-            gap: 45px;
-        }
+.signin-component .image-container {
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
 
-            #IngresariCloud {
-                width: 55px;
-                height: 55px;
-            }
+.signin-component #IngresariCloud {
+    width: 55px;
+    height: 55px;
+}
 
-            #IngresarGoogle {
-                width: 60px;
-                height: 60px;
-            }
+.signin-component #IngresarGoogle {
+    width: 60px;
+    height: 60px;
+}
 
-    mat-form-field {
-        position: relative;
-        width: 345px;
-        height: auto;
-        margin-bottom: 30px;
-    }
+.signin-component mat-form-field {
+    position: relative;
+    width: 345px;
+    height: auto;
+    margin-bottom: 30px;
+}
 
-    .mdc-line-ripple {
-        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
-    }
+.signin-component .mdc-line-ripple {
+    --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-        background-color: #e2e2e2 !important;
-    }
+.signin-component .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #e2e2e2 !important;
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
-        color: #5e5e5e !important;
-    }
+.signin-component .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: #5e5e5e !important;
+}
 
-    input {
-        color: #5e5e5e; 
-    }
+.signin-component input {
+    color: #5e5e5e; 
+}
 
-    mat-label.formLabel {
-        color: #5e5e5e;
-    }
+.signin-component mat-label.formLabel {
+    color: #5e5e5e;
+}
 
-    mat-hint {
-        color: #c6c6c6;
-    }
+.signin-component mat-hint {
+    color: #c6c6c6;
+}
 
-    :root{
-        --mat-datepicker-toggle-active-state-icon-color: #005d52 !important;
-        --mat-datepicker-toggle-icon-color: #5e5e5e;
-        --mat-datepicker-calendar-date-text-color: #5e5e5e;
-        --mat-datepicker-calendar-body-label-text-color: #5e5e5e;
-        --mat-datepicker-calendar-header-text-color: #5e5e5e;
-        --mat-datepicker-calendar-navigation-button-icon-color: #5e5e5e;
-        --mat-datepicker-calendar-date-today-outline-color: #4C7573;
-        --mdc-text-button-label-text-color: #5e5e5e;
-        --mat-datepicker-calendar-date-selected-state-background-color: #005d52;
-        --mat-datepicker-calendar-date-selected-disabled-state-background-color: #6D9D99 !important;
-        --mat-datepicker-calendar-date-focus-state-background-color:#6D9D99 !important;
-        --mat-datepicker-calendar-date-hover-state-background-color: #6D9D99 !important;
-    }
-    
-        .mat-datepicker-content{
-            background-color: #e2e2e2 !important;
-        }
+:root {
+    --mat-datepicker-toggle-active-state-icon-color: #005d52 !important;
+    --mat-datepicker-toggle-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-text-color: #5e5e5e;
+    --mat-datepicker-calendar-body-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-header-text-color: #5e5e5e;
+    --mat-datepicker-calendar-navigation-button-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-today-outline-color: #4C7573;
+    --mdc-text-button-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-date-selected-state-background-color: #005d52;
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: #6D9D99 !important;
+    --mat-datepicker-calendar-date-focus-state-background-color: #6D9D99 !important;
+    --mat-datepicker-calendar-date-hover-state-background-color: #6D9D99 !important;
+    --mdc-filled-text-field-disabled-container-color: #e2e2e2;
+}
 
-        .mat-mdc-button.mat-unthemed {
-            --mdc-text-button-label-text-color: #5e5e5e !important;
-        }
+.signin-component .mat-datepicker-content {
+    background-color: #e2e2e2 !important;
+}
 
-        .mat-calendar-arrow{
-            --mat-datepicker-calendar-period-button-icon-color: #5e5e5e;
-        }
+.signin-component .mat-mdc-button.mat-unthemed {
+    --mdc-text-button-label-text-color: #5e5e5e !important;
+}
 
-        .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
-            background-color: #6D9D99 !important;
-            color: #fff !important;
-        }
-        
-    button.signinButton{
-        color: white !important; 
-        background-color: #005d52 !important;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 14px !important;
-        border-radius: 100px !important;
-        width: 160px !important;
-        height: 40px !important;
-        white-space: nowrap !important;
-        letter-spacing: 0px !important;
-        justify-content: center !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-    }
+.signin-component .mat-calendar-arrow {
+    --mat-datepicker-calendar-period-button-icon-color: #5e5e5e;
+}
 
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000; /* Ensure it appears above other content */
-        }
-        
-        .overlay img {
-        max-width: 15%;
-        max-height: 15%;
-        }
+.signin-component .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: #6D9D99 !important;
+    color: #fff !important;
+}
+
+.signin-component button.signinButton {
+    color: white !important; 
+    background-color: #005d52 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+    border-radius: 100px !important;
+    width: 160px !important;
+    height: 40px !important;
+    white-space: nowrap !important;
+    letter-spacing: 0px !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.signin-component .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.signin-component .overlay img {
+    max-width: 15%;
+    max-height: 15%;
+}

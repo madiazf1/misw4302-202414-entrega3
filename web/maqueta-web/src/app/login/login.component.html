@@ -1,79 +1,83 @@
-<mat-card id="logo">
-    <img 
-        src="assets/images/Alertify.png" 
-        alt="IngresariCloud" 
-    />
-</mat-card>
+<div class="login-component">
+
+    <mat-card id="logo">
+        <img 
+            src="assets/images/Alertify.png" 
+            alt="IngresariCloud" 
+        />
+    </mat-card>
 
 
-<mat-card class="loginCard">
-    <mat-card-header class="mx-auto">
-        <mat-card-title>Inicie sesión</mat-card-title>
-    </mat-card-header>
-    <form [formGroup]="loginForm">
-        <mat-card-content>
-            <div>
-                <mat-form-field>
-                    <mat-label class="formLabel">Usuario</mat-label>
-                    <input matInput placeholder="Usuario" formControlName="username"/>
-                    <mat-hint>Digite su usuario</mat-hint>
-                    <mat-error
-                        *ngIf="loginFormData.password.errors?.required"
-                    >
-                    ¡Este campo es obligatorio!
-                    </mat-error>
-                </mat-form-field>
-            </div>
-            <div>
-                <mat-form-field>
-                    <mat-label class="formLabel">Contraseña</mat-label>
-                    <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
-                    <mat-hint>Digite su contraseña</mat-hint>
-                    <mat-error
-                        *ngIf="loginFormData.password.errors?.required"
-                    >
+    <mat-card class="loginCard">
+        <mat-card-header class="mx-auto">
+            <mat-card-title>Inicie sesión</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="loginForm">
+            <mat-card-content>
+                <div>
+                    <mat-form-field>
+                        <mat-label class="formLabel">Usuario</mat-label>
+                        <input matInput placeholder="Usuario" formControlName="username"/>
+                        <mat-hint>Digite su usuario</mat-hint>
+                        <mat-error
+                            *ngIf="loginFormData.password.errors?.required"
+                        >
                         ¡Este campo es obligatorio!
-                    </mat-error>
-                    <mat-error
-                        *ngIf="loginFormData.password.errors?.minlength"
-                    >
-                        ¡No cumple con longitud mínima!
-                    </mat-error>
-                </mat-form-field>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label class="formLabel">Contraseña</mat-label>
+                        <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
+                        <mat-hint>Digite su contraseña</mat-hint>
+                        <mat-error
+                            *ngIf="loginFormData.password.errors?.required"
+                        >
+                            ¡Este campo es obligatorio!
+                        </mat-error>
+                        <mat-error
+                            *ngIf="loginFormData.password.errors?.minlength"
+                        >
+                            ¡No cumple con longitud mínima!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-button (click)="navigateToReport()" id="loginButton">
+                        <mat-label class="buttonLabel">Ingresar</mat-label>
+                    </button>
+                </div>
+            </mat-card-content>
+        </form>
+    </mat-card>
+    <mat-card class="loginOthers">
+        <mat-card-header class="mx-auto">
+            <mat-card-title>Inicie sesión con</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="otherLogins">
+            <div class="image-container">
+                <img
+                    src="assets/images/iCloudLogo.png" 
+                    alt="IngresariCloud"
+                    id="IngresariCloud" 
+                />
+                <img
+                    src="assets/images/GoogleLogo.png" 
+                    alt="IngresarGoogle" 
+                    id="IngresarGoogle"
+                />
             </div>
-            <div>
-                <button mat-button (click)="navigateToReport()" id="loginButton">
-                    <mat-label class="buttonLabel">Ingresar</mat-label>
+            <div class="buttonContainer">
+                <button mat-button (click)="navigateToSignIn()" id="createAccountButton">
+                    <mat-label class="buttonLabel">Cree una cuenta aquí</mat-label>
                 </button>
             </div>
         </mat-card-content>
-    </form>
-</mat-card>
-<mat-card class="loginOthers">
-    <mat-card-header class="mx-auto">
-        <mat-card-title>Inicie sesión con</mat-card-title>
-    </mat-card-header>
-    <mat-card-content class="otherLogins">
-        <div class="image-container">
-            <img
-                src="assets/images/iCloudLogo.png" 
-                alt="IngresariCloud"
-                id="IngresariCloud" 
-            />
-            <img
-                src="assets/images/GoogleLogo.png" 
-                alt="IngresarGoogle" 
-                id="IngresarGoogle"
-            />
-        </div>
-        <div class="buttonContainer">
-            <button mat-button (click)="navigateToSignIn()" id="createAccountButton">
-                <mat-label class="buttonLabel">Cree una cuenta aquí</mat-label>
-            </button>
-        </div>
-    </mat-card-content>
-</mat-card>
+    </mat-card>
 
-<div *ngIf="isOverlayVisible" class="overlay">
-    <img src="assets/images/loginSuccess.png" alt="Overlay Image" />
+    <div *ngIf="isOverlayVisible" class="overlay">
+        <img src="assets/images/loginSuccess.png" alt="Overlay Image" />
+    </div>
+
 </div>

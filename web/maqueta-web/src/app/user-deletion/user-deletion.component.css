@@ -1,119 +1,118 @@
-/* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.navbar {
-    width: 61px; /* Set the width of the navbar */
-    background-color: #4C7573; /* Change to white for better visibility */
-    padding: 0px; /* Padding around the navbar */
-    position: fixed; /* Fix it on the side */
-    height: 100%; /* Full height */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for effect */
-    z-index: 1000; /* Ensure it is on top */
-    }
+.user-deletion-component .navbar {
+    width: 61px;
+    background-color: #4C7573;
+    padding: 0px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
 
-    .image-button {
-        display: inline-block; /* Adjust as necessary */
-        cursor: pointer;
-      }
+.user-deletion-component .image-button {
+    display: inline-block;
+    cursor: pointer;
+}
 
-mat-list{
+.user-deletion-component mat-list {
     position: absolute;
     top: 50px;
 }
 
-mat-list-item{
+.user-deletion-component mat-list-item {
     height: 45px !important;
     padding-left: 17px;
 }
 
-    .text-container {
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Center horizontally */
-        height: 40px;
-    }
+.user-deletion-component .text-container {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
 
-    .overlay-text {
-        font-size: 12px;
-        text-align: center; /* Center text within the div */
-        color: #e2e2e2; /* Text color */
-        font-weight: 580;
-        white-space: normal; /* Allow text to wrap */
-        word-wrap: break-word; /* Break long words if necessary */
-        line-height: 1.2;
-    }
+.user-deletion-component .overlay-text {
+    font-size: 12px;
+    text-align: center;
+    color: #e2e2e2;
+    font-weight: 580;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
 
-mat-card{
+.user-deletion-component mat-card {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-    mat-card-header{
-        padding-bottom: 30px !important;
-    }
+.user-deletion-component mat-card-header {
+    padding-bottom: 30px !important;
+}
 
-    mat-card.deleteUserAccountCard{
-        position:absolute;
-        margin-left: 420px;
-        width: 950px;
-        top: 180px;
-    }
+.user-deletion-component mat-card.deleteUserAccountCard {
+    position: absolute;
+    margin-left: 420px;
+    width: 950px;
+    top: 180px;
+}
 
-    mat-card.alertifyTitle {
-        margin-left: 103px;
-        height: 100px !important;
-        width: 270px;
-        position: relative;
-        top: 20px;
-    }
+.user-deletion-component mat-card.alertifyTitle {
+    margin-left: 103px;
+    height: 100px !important;
+    width: 270px;
+    position: relative;
+    top: 20px;
+}
 
-    input {
-        color: #5e5e5e; 
-    }
+.user-deletion-component input {
+    color: #5e5e5e; 
+}
 
-        mat-card-content.deleteForm{
-            padding-top: 58px !important;
-            padding-left: 0px;
-            padding-bottom: 0px !important;
-        }
+.user-deletion-component mat-card-content.deleteForm {
+    padding-top: 58px !important;
+    padding-left: 0px;
+    padding-bottom: 0px !important;
+}
 
-        li {
-            padding-bottom: 20px !important ;
-        }
+.user-deletion-component li {
+    padding-bottom: 20px !important;
+}
 
-    mat-label.formLabel {
-        color: #5e5e5e;
-    }
+.user-deletion-component mat-label.formLabel {
+    color: #5e5e5e;
+}
 
-    mat-hint {
-        color: #c6c6c6;
-    }
+.user-deletion-component mat-hint {
+    color: #c6c6c6;
+}
 
-    mat-form-field {
-        position: relative;
-        width: 345px;
-        height: auto;
-        margin-bottom: 30px;
-    }
+.user-deletion-component mat-form-field {
+    position: relative;
+    width: 345px;
+    height: auto;
+    margin-bottom: 30px;
+}
 
-    .mdc-line-ripple {
-        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
-    }
+.user-deletion-component .mdc-line-ripple {
+    --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-        background-color: #e2e2e2 !important;
-    }
+.user-deletion-component .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #e2e2e2 !important;
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
-        color: #5e5e5e !important;
-    }
+.user-deletion-component .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: #5e5e5e !important;
+}
 
-div.buttonContainer{
+.user-deletion-component div.buttonContainer {
     display: flex;
     gap: 25px;
 }
 
-button.generalButton{
+.user-deletion-component button.generalButton {
     color: white !important;
     font-family: 'Roboto', sans-serif !important;
     width: 160px !important;
@@ -126,30 +125,30 @@ button.generalButton{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; 
 }
 
-    button#cancelButton{
-        margin-top: 20px;
-        background-color: #005d52 !important;
-    }
+.user-deletion-component button#cancelButton {
+    margin-top: 20px;
+    background-color: #005d52 !important;
+}
 
-    button#deleteButton{
-        margin-top: 20px;
-        background-color: #D34F12 !important;
-    }
+.user-deletion-component button#deleteButton {
+    margin-top: 20px;
+    background-color: #D34F12 !important;
+}
 
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000; /* Ensure it appears above other content */
-        }
-        
-        .overlay img {
-        max-width: 15%;
-        max-height: 15%;
-        }
+.user-deletion-component .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-deletion-component .overlay img {
+    max-width: 15%;
+    max-height: 15%;
+}

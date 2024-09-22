@@ -1,7 +1,7 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.navbar {
+.report-component .navbar {
     width: 61px; /* Set the width of the navbar */
     background-color: #4C7573; /* Change to white for better visibility */
     padding: 0px; /* Padding around the navbar */
@@ -11,23 +11,23 @@
     z-index: 1000; /* Ensure it is on top */
     }
 
-    mat-list{
+    .report-component mat-list{
         position: absolute;
         top: 50px;
     }
 
-    mat-list-item{
+    .report-component mat-list-item{
         height: 45px !important;
         padding-left: 17px;
     }
 
-        .text-container {
+        .report-component .text-container {
             display: flex; /* Use flexbox for centering */
             justify-content: center; /* Center horizontally */
             height: 40px;
         }
 
-        .overlay-text {
+        .report-component  .overlay-text {
             font-size: 12px;
             text-align: center; /* Center text within the div */
             color: #e2e2e2; /* Text color */
@@ -37,57 +37,57 @@
             line-height: 1.2;
         }
 
-mat-card{
+.report-component mat-card{
     background-color: #fff;
     margin-left: 103px;
     border: none;
     box-shadow: none;
 }
 
-    mat-card .alertify-title {
+    .report-component mat-card .alertify-title {
         height: 100px;
         width: 270px;
         position: relative;
         top: 20px;
     }
 
-    #table{
+    .report-component #table{
         position: relative;
         top: 50px;
     }
 
-    mat-card-title{
+    .report-component mat-card-title{
         font-size: 24px;
     }
 
-    mat-card button{
+    .report-component mat-card button{
         background-color: #005d52;
         font-family: 'Roboto', sans-serif;
     }
 
-    table{
+    .report-component table{
         background-color: #e2e2e2;
     }
 
-        table th {
+        .report-component table th {
             color: #000000;
             border-color: #000000;
             font-size: 20px;   
         }
 
-        table td {
+        .report-component table td {
             color: #919191 !important;
             border-color: #000000;
             font-size: 16px;
         }
 
-        table td button{
+        .report-component table td button{
             border-radius: 100px;
             width: 160px;
             height: 40px;
         }
 
-        .image-button {
+        .report-component .image-button {
             display: inline-block; /* Adjust as necessary */
             cursor: pointer;
           }

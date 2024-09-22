@@ -1,105 +1,107 @@
-<div class="navbar">
-    <mat-list>
-      <mat-list-item>
-        <a [routerLink]="['/report']" class="image-button">
-          <img mat-card-image 
-            src="assets/images/menuIcon.png" 
-            alt="menu"
-            id="menuIcon"
-          />
-        </a>
-      </mat-list-item>
-      <mat-list-item>
-        <a [routerLink]="['/user-settings']" class="image-button">
-          <img mat-card-image 
-            src="assets/images/userSettingsIcon.png" 
-            alt="user settings"
-            id="userSettingsIcon"
-          />
-        </a>
-      </mat-list-item>
-      <div class="text-container">
-        <div class="overlay-text">Gestión Cuenta</div>
-      </div>
-      <mat-list-item>
-        <a [routerLink]="['/login']" class="image-button">
-          <img mat-card-image 
-            src="assets/images/closeSessionIcon.png" 
-            alt="close session"
-            id="closeSessionIcon"
-          />
-        </a>
-      </mat-list-item>
-      <div class="text-container">
-        <div class="overlay-text">Cerrar Sesión</div>
-      </div>
-    </mat-list>
-  </div>
+<div class="report-detail-component">
+  <div class="navbar">
+      <mat-list>
+        <mat-list-item>
+          <a [routerLink]="['/report']" class="image-button">
+            <img mat-card-image 
+              src="assets/images/menuIcon.png" 
+              alt="menu"
+              id="menuIcon"
+            />
+          </a>
+        </mat-list-item>
+        <mat-list-item>
+          <a [routerLink]="['/user-settings']" class="image-button">
+            <img mat-card-image 
+              src="assets/images/userSettingsIcon.png" 
+              alt="user settings"
+              id="userSettingsIcon"
+            />
+          </a>
+        </mat-list-item>
+        <div class="text-container">
+          <div class="overlay-text">Gestión Cuenta</div>
+        </div>
+        <mat-list-item>
+          <a [routerLink]="['/login']" class="image-button">
+            <img mat-card-image 
+              src="assets/images/closeSessionIcon.png" 
+              alt="close session"
+              id="closeSessionIcon"
+            />
+          </a>
+        </mat-list-item>
+        <div class="text-container">
+          <div class="overlay-text">Cerrar Sesión</div>
+        </div>
+      </mat-list>
+    </div>
 
-<mat-card class="alertifyTitle">
-    <img
-    class="alertify-title" 
-    src="assets/images/Alertify2.png" 
-    alt="Alertify2" 
-    />
-</mat-card>
+  <mat-card class="alertifyTitle">
+      <img
+      class="alertify-title" 
+      src="assets/images/Alertify2.png" 
+      alt="Alertify2" 
+      />
+  </mat-card>
 
-<mat-card class="alarmDetail">
-    <mat-card-header class="alarmDetailTitle">
-        <mat-card-title>Detalle de Pago</mat-card-title>
-    </mat-card-header>
-    <form [formGroup]="reportDetailForm">
-        <mat-card-content>
-            <div>
-                <h3>Nombre de alarma</h3>
-                <mat-form-field>
-                    <mat-label class="formLabel">Alarma 1</mat-label>
-                    <input matInput disabled>
-                </mat-form-field>
-            </div>
-            <div>
-                <h3>Fecha de pago</h3>
-                <mat-form-field>
-                    <mat-label class="formLabel">25/01/2025</mat-label>
-                    <input matInput disabled>
-                </mat-form-field>
-            </div>
-            <div>
-                <h3>Tipo de obligación</h3>
-                <mat-form-field>
-                    <mat-label class="formLabel">Arriendo</mat-label>
-                    <input matInput disabled>
-                </mat-form-field>
-            </div>
-            <div>
-                <h3>Valor</h3>
-                <mat-form-field>
-                    <mat-label class="formLabel">$2 000 000</mat-label>
-                    <input matInput disabled>
-                </mat-form-field>
-            </div>
-            <div class="checkboxContainer">
-                <h3>¿Generado por IA?</h3>
-                <mat-checkbox [disabled]="true" [checked]="true"></mat-checkbox>
-            </div>
-            <div>
-                <h3>Banco</h3>
-                <mat-form-field>
-                    <mat-label class="formLabel">Bancolombia</mat-label>
-                    <input matInput disabled>
-                </mat-form-field>
-            </div>
-        </mat-card-content>
-    </form>
-</mat-card>
+  <mat-card class="alarmDetail">
+      <mat-card-header class="alarmDetailTitle">
+          <mat-card-title>Detalle de Pago</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="reportDetailForm">
+          <mat-card-content>
+              <div>
+                  <h3>Nombre de alarma</h3>
+                  <mat-form-field>
+                      <mat-label class="formLabel">Alarma 1</mat-label>
+                      <input matInput disabled>
+                  </mat-form-field>
+              </div>
+              <div>
+                  <h3>Fecha de pago</h3>
+                  <mat-form-field>
+                      <mat-label class="formLabel">25/01/2025</mat-label>
+                      <input matInput disabled>
+                  </mat-form-field>
+              </div>
+              <div>
+                  <h3>Tipo de obligación</h3>
+                  <mat-form-field>
+                      <mat-label class="formLabel">Arriendo</mat-label>
+                      <input matInput disabled>
+                  </mat-form-field>
+              </div>
+              <div>
+                  <h3>Valor</h3>
+                  <mat-form-field>
+                      <mat-label class="formLabel">$2 000 000</mat-label>
+                      <input matInput disabled>
+                  </mat-form-field>
+              </div>
+              <div class="checkboxContainer">
+                  <h3>¿Generado por IA?</h3>
+                  <mat-checkbox [disabled]="true" [checked]="true"></mat-checkbox>
+              </div>
+              <div>
+                  <h3>Banco</h3>
+                  <mat-form-field>
+                      <mat-label class="formLabel">Bancolombia</mat-label>
+                      <input matInput disabled>
+                  </mat-form-field>
+              </div>
+          </mat-card-content>
+      </form>
+  </mat-card>
 
-<mat-card class="supportDocument">
-    <mat-card-header class="supportDocumentTitle">
-        <mat-card-title>Documento de Soporte</mat-card-title>
-    </mat-card-header>
-    <img
-        class="documento-soporte" 
-        src="assets/images/DocumentoSoporte.png" 
-        alt="documentoSoporte" 
-    />
-</mat-card>
+  <mat-card class="supportDocument">
+      <mat-card-header class="supportDocumentTitle">
+          <mat-card-title>Documento de Soporte</mat-card-title>
+      </mat-card-header>
+      <img
+          class="documento-soporte" 
+          src="assets/images/DocumentoSoporte.png" 
+          alt="documentoSoporte" 
+      />
+  </mat-card>
+</div>

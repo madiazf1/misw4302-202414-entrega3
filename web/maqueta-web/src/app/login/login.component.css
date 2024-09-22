@@ -1,12 +1,12 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-mat-card{
+.login-component mat-card{
     background-color: transparent !important;
     box-shadow: none !important;
 }
 
-    #logo {
+    .login-component #logo {
         display: flex;
         width: 370px;
         height: 370px;
@@ -15,7 +15,7 @@ mat-card{
         left: 480px;
     }
 
-    mat-card.loginCard {
+    .login-component mat-card.loginCard {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,7 +25,7 @@ mat-card{
         width: 350px;
     }
 
-    mat-card.loginOthers {
+    .login-component mat-card.loginOthers {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -35,11 +35,11 @@ mat-card{
         height: 210px;
     }
 
-    mat-card-content.otherLogins {
+    .login-component mat-card-content.otherLogins {
         padding-left: 5px;
     }
 
-        .buttonContainer {
+        .login-component .buttonContainer {
             position: relative;
             top: 40px;
             width: 100%; /* Full width for the button container */
@@ -50,7 +50,7 @@ mat-card{
             padding: 0;
         }
 
-        .image-container{
+        .login-component .image-container{
             position: relative;
             top: 5px;
             display: flex;
@@ -58,48 +58,48 @@ mat-card{
             gap: 45px;
         }
 
-            #IngresariCloud {
+            .login-component #IngresariCloud {
                 width: 55px;
                 height: 55px;
             }
 
-            #IngresarGoogle {
+            .login-component #IngresarGoogle {
                 width: 60px;
                 height: 60px;
             }
 
-    mat-form-field {
+    .login-component mat-form-field {
         position: relative;
         width: 345px;
         height: auto;
         margin-bottom: 30px;
     }
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    .login-component .mdc-text-field--filled:not(.mdc-text-field--disabled) {
         background-color: #e2e2e2 !important; /* Replace with your desired color */
     }
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    .login-component .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
         color: #5e5e5e !important;
     }
 
-    .mdc-line-ripple {
+    .login-component .mdc-line-ripple {
         --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
     }
 
-    input {
+    .login-component input {
         color: #5e5e5e; 
     }
 
-    mat-label.formLabel {
+    .login-component mat-label.formLabel {
         color: #5e5e5e;
     }
 
-    mat-hint {
+    .login-component mat-hint {
         color: #c6c6c6;
     }
 
-    mat-card button{
+    .login-component mat-card button{
         color: white !important; 
         background-color: #005d52 !important;
         font-family: 'Roboto', sans-serif !important;

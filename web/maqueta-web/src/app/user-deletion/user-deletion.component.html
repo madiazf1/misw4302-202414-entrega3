@@ -1,99 +1,101 @@
-<div class="navbar">
-  <mat-list>
-    <mat-list-item>
-      <a [routerLink]="['/report']" class="image-button">
-        <img mat-card-image 
-          src="assets/images/menuIcon.png" 
-          alt="menu"
-          id="menuIcon"
-        />
-      </a>
-    </mat-list-item>
-    <mat-list-item>
-      <a [routerLink]="['/user-settings']" class="image-button">
-        <img mat-card-image 
-          src="assets/images/userSettingsIcon.png" 
-          alt="user settings"
-          id="userSettingsIcon"
-        />
-      </a>
-    </mat-list-item>
-    <div class="text-container">
-      <div class="overlay-text">Gestión Cuenta</div>
-    </div>
-    <mat-list-item>
-      <a [routerLink]="['/login']" class="image-button">
-        <img mat-card-image 
-          src="assets/images/closeSessionIcon.png" 
-          alt="close session"
-          id="closeSessionIcon"
-        />
-      </a>
-    </mat-list-item>
-    <div class="text-container">
-      <div class="overlay-text">Cerrar Sesión</div>
-    </div>
-  </mat-list>
-</div>
+<div class="user-deletion-component">
+  <div class="navbar">
+    <mat-list>
+      <mat-list-item>
+        <a [routerLink]="['/report']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/menuIcon.png" 
+            alt="menu"
+            id="menuIcon"
+          />
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a [routerLink]="['/user-settings']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/userSettingsIcon.png" 
+            alt="user settings"
+            id="userSettingsIcon"
+          />
+        </a>
+      </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Gestión Cuenta</div>
+      </div>
+      <mat-list-item>
+        <a [routerLink]="['/login']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/closeSessionIcon.png" 
+            alt="close session"
+            id="closeSessionIcon"
+          />
+        </a>
+      </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Cerrar Sesión</div>
+      </div>
+    </mat-list>
+  </div>
 
-<mat-card class="alertifyTitle">
-    <img
-    class="alertify-title" 
-    src="assets/images/Alertify2.png" 
-    alt="Alertify2" 
-    />
-</mat-card>
+  <mat-card class="alertifyTitle">
+      <img
+      class="alertify-title" 
+      src="assets/images/Alertify2.png" 
+      alt="Alertify2" 
+      />
+  </mat-card>
 
-<mat-card class="deleteUserAccountCard">
-    <mat-card-header class="deleteUserAccountTitle">
-        <mat-card-title>Eliminar cuenta</mat-card-title>
-    </mat-card-header>
-    
-    <mat-card-content>
-        <p style="padding-bottom: 12px;">Nos duele que continúe con el proceso de eliminación de cuenta.</p>
+  <mat-card class="deleteUserAccountCard">
+      <mat-card-header class="deleteUserAccountTitle">
+          <mat-card-title>Eliminar cuenta</mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content>
+          <p style="padding-bottom: 12px;">Nos duele que continúe con el proceso de eliminación de cuenta.</p>
 
-        <p style="padding-bottom: 12px;">Es importante enfatizar en las implicaciones de eliminar la cuenta, que se listan a continuación:</p>
-        
-        <ul>
-            <li>Irreversibilidad: al eliminarse la cuenta, esta no podrá ser restaurada ya que la información asociada ha sido eliminada.</li>
-            <li>Pérdida de datos: al eliminarse la cuenta, la información personal asociada a la cuenta, los datos asociados a la aplicación y la personalización de la aplicación tanto web como móvil serán todos eliminados.</li>
-            <li style="padding-bottom: 8px !important;">Acceso y uso de la aplicación móvil: el acceso y uso de la aplicación móvil no será posible una vez la cuenta haya sido eliminada.</li>
-        </ul>
-        
-        <p>Si entiende y está de acuerdo con asumir las implicaciones ya mencionadas entonces por favor digite su contraseña como muestra de confirmación para eliminar la cuenta.</p>
+          <p style="padding-bottom: 12px;">Es importante enfatizar en las implicaciones de eliminar la cuenta, que se listan a continuación:</p>
+          
+          <ul>
+              <li>Irreversibilidad: al eliminarse la cuenta, esta no podrá ser restaurada ya que la información asociada ha sido eliminada.</li>
+              <li>Pérdida de datos: al eliminarse la cuenta, la información personal asociada a la cuenta, los datos asociados a la aplicación y la personalización de la aplicación tanto web como móvil serán todos eliminados.</li>
+              <li style="padding-bottom: 8px !important;">Acceso y uso de la aplicación móvil: el acceso y uso de la aplicación móvil no será posible una vez la cuenta haya sido eliminada.</li>
+          </ul>
+          
+          <p>Si entiende y está de acuerdo con asumir las implicaciones ya mencionadas entonces por favor digite su contraseña como muestra de confirmación para eliminar la cuenta.</p>
 
-        <form [formGroup]="userDeletionForm">
-            <mat-card-content class="deleteForm">
-                <div>
-                    <mat-form-field>
-                        <mat-label class="formLabel">Contraseña</mat-label>
-                        <mat-hint>Digite su contraseña</mat-hint>
-                        <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
-                        <mat-error
-                            *ngIf="userDeletionFormData.password.errors?.required"
-                        >
-                            ¡Este campo es obligatorio!
-                        </mat-error>
-                        <mat-error
-                            *ngIf="userDeletionFormData.password.errors?.minlength"
-                        >
-                            ¡No cumple con longitud mínima!
-                        </mat-error>
-                    </mat-form-field>
-                </div>
-            </mat-card-content>
-        </form>
-        <div class="buttonContainer">
-            <button mat-button (click)="navigateToLogIn()" class="generalButton" id="deleteButton">
-                <mat-label>Eliminar Cuenta</mat-label>
-            </button>
-            <button mat-button (click)="navigateToUserSettings()" class="generalButton" id="cancelButton">
-                <mat-label>Cancelar</mat-label>
-            </button>
-        </div>
-    </mat-card-content>
-</mat-card>
+          <form [formGroup]="userDeletionForm">
+              <mat-card-content class="deleteForm">
+                  <div>
+                      <mat-form-field>
+                          <mat-label class="formLabel">Contraseña</mat-label>
+                          <mat-hint>Digite su contraseña</mat-hint>
+                          <input matInput placeholder="Contraseña" type="password" formControlName="password"/>
+                          <mat-error
+                              *ngIf="userDeletionFormData.password.errors?.required"
+                          >
+                              ¡Este campo es obligatorio!
+                          </mat-error>
+                          <mat-error
+                              *ngIf="userDeletionFormData.password.errors?.minlength"
+                          >
+                              ¡No cumple con longitud mínima!
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+              </mat-card-content>
+          </form>
+          <div class="buttonContainer">
+              <button mat-button (click)="navigateToLogIn()" class="generalButton" id="deleteButton">
+                  <mat-label>Eliminar Cuenta</mat-label>
+              </button>
+              <button mat-button (click)="navigateToUserSettings()" class="generalButton" id="cancelButton">
+                  <mat-label>Cancelar</mat-label>
+              </button>
+          </div>
+      </mat-card-content>
+  </mat-card>
 
-<div *ngIf="isOverlayVisible" class="overlay">
-  <img src="assets/images/loginSuccess.png" alt="Overlay Image" />
+  <div *ngIf="isOverlayVisible" class="overlay">
+    <img src="assets/images/loginSuccess.png" alt="Overlay Image" />
+  </div>
 </div>

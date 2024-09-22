@@ -1,146 +1,159 @@
 /* Import Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.navbar {
-    width: 61px; /* Set the width of the navbar */
-    background-color: #4C7573; /* Change to white for better visibility */
-    padding: 0px; /* Padding around the navbar */
-    position: fixed; /* Fix it on the side */
-    height: 100%; /* Full height */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for effect */
-    z-index: 1000; /* Ensure it is on top */
-    }
+/* Scope styles under the .report-detail-component class */
+.report-detail-component .navbar {
+    width: 61px;
+    background-color: #4C7573;
+    padding: 0px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
 
-    .image-button {
-        display: inline-block; /* Adjust as necessary */
-        cursor: pointer;
-      }
+.report-detail-component .image-button {
+    display: inline-block;
+    cursor: pointer;
+}
 
-    mat-list{
-        position: absolute;
-        top: 50px;
-    }
+.report-detail-component mat-list {
+    position: absolute;
+    top: 50px;
+}
 
-    mat-list-item{
-        height: 45px !important;
-        padding-left: 17px;
-    }
+.report-detail-component mat-list-item {
+    height: 45px !important;
+    padding-left: 17px;
+}
 
-        .text-container {
-            display: flex; /* Use flexbox for centering */
-            justify-content: center; /* Center horizontally */
-            height: 40px;
-        }
+.report-detail-component .text-container {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
 
-        .overlay-text {
-            font-size: 12px;
-            text-align: center; /* Center text within the div */
-            color: #e2e2e2; /* Text color */
-            font-weight: 580;
-            white-space: normal; /* Allow text to wrap */
-            word-wrap: break-word; /* Break long words if necessary */
-            line-height: 1.2;
-        }
+.report-detail-component .overlay-text {
+    font-size: 12px;
+    text-align: center; 
+    color: #e2e2e2; 
+    font-weight: 580;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
 
-mat-card{
+.report-detail-component mat-card {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-    mat-card.alertifyTitle {
-        margin-left: 103px;
-        height: 100px;
-        width: 270px;
-        position: relative;
-        top: 20px;
-    }
+.report-detail-component mat-card.alertifyTitle {
+    margin-left: 103px;
+    height: 100px;
+    width: 270px;
+    position: relative;
+    top: 20px;
+}
 
-    mat-card-title{
-        font-size: 24px !important;
-        padding-bottom: 45px;
-    }
+.report-detail-component mat-card-title {
+    font-size: 24px !important;
+    padding-bottom: 45px;
+}
 
-    mat-card-header.alarmDetailTitle{
-        padding-top: 0px !important;
-    }
+.report-detail-component mat-card-header.alarmDetailTitle {
+    padding-top: 0px !important;
+}
 
-    mat-card-header.supportDocumentTitle{
-        padding: 0px !important;
-    }
+.report-detail-component mat-card-header.supportDocumentTitle {
+    padding: 0px !important;
+}
 
-    mat-card.alarmDetail{
-        position:absolute;
-        margin-left: 420px;
-        top: 150px;
-    }
+.report-detail-component mat-card.alarmDetail {
+    position: absolute;
+    margin-left: 420px;
+    top: 150px;
+}
 
-    mat-card.supportDocument{
-        position:absolute;
-        margin-left: 1030px;
-        top: 150px;
-        height: 700px;
-        width: auto;
-    }
+.report-detail-component mat-card.supportDocument {
+    position: absolute;
+    margin-left: 1030px;
+    top: 150px;
+    height: 700px;
+    width: auto;
+}
 
-    mat-card-content{
-        padding-top: 0px !important;
-    }
+.report-detail-component mat-card-content {
+    padding-top: 0px !important;
+}
 
-mat-form-field {
+.report-detail-component mat-form-field {
     position: relative;
     width: 345px;
     height: auto;
 }
 
-    :root{
-        --mdc-filled-text-field-disabled-container-color: #e2e2e2;
-    }
+:root {
+    --mat-datepicker-toggle-active-state-icon-color: #005d52 !important;
+    --mat-datepicker-toggle-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-text-color: #5e5e5e;
+    --mat-datepicker-calendar-body-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-header-text-color: #5e5e5e;
+    --mat-datepicker-calendar-navigation-button-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-today-outline-color: #4C7573;
+    --mdc-text-button-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-date-selected-state-background-color: #005d52;
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: #6D9D99 !important;
+    --mat-datepicker-calendar-date-focus-state-background-color:#6D9D99 !important;
+    --mat-datepicker-calendar-date-hover-state-background-color: #6D9D99 !important;
+    --mdc-filled-text-field-disabled-container-color: #e2e2e2;
+}
 
-    .mdc-line-ripple {
-        --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
-    }
+.report-detail-component .mdc-line-ripple {
+    --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-        background-color: #e2e2e2 !important;
-    }
+.report-detail-component .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #e2e2e2 !important;
+}
 
-    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
-        color: #5e5e5e !important;
-    }
+.report-detail-component .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: #5e5e5e !important;
+}
 
-    input {
-        color: #5e5e5e !important; 
-    }
+.report-detail-component input {
+    color: #5e5e5e !important; 
+}
 
-    mat-label.formLabel {
-        color: #5e5e5e;
-    }
+.report-detail-component mat-label.formLabel {
+    color: #5e5e5e;
+}
 
-    mat-hint {
-        color: #c6c6c6;
-    }
+.report-detail-component mat-hint {
+    color: #c6c6c6;
+}
 
-mat-checkbox {
-    background-color: #005d52; /* Keep this if you want a background */
+.report-detail-component mat-checkbox {
+    background-color: #005d52;
     width: 24px; 
     height: 24px; 
-    display: flex; /* Ensure it can be sized correctly */
+    display: flex;
     margin-top: 2px;
     border-radius: 2px;
 }
 
-    .checkboxContainer {
-        display: flex;
-        gap: 35px;
-    }
+.report-detail-component .checkboxContainer {
+    display: flex;
+    gap: 35px;
+}
 
-    .mat-mdc-checkbox {
-        --mdc-checkbox-state-layer-size: 24px;
-      }
+.report-detail-component .mat-mdc-checkbox {
+    --mdc-checkbox-state-layer-size: 24px;
+}
 
-    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:checked~.mdc-checkbox__background,
-    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:indeterminate~.mdc-checkbox__background,
-    .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true][disabled]~.mdc-checkbox__background {
-        background-color: transparent !important; 
-    }
+.report-detail-component .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:checked~.mdc-checkbox__background,
+.report-detail-component .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[disabled]:indeterminate~.mdc-checkbox__background,
+.report-detail-component .checkboxContainer .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true][disabled]~.mdc-checkbox__background {
+    background-color: transparent !important; 
+}
