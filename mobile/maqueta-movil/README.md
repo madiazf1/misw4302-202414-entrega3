@@ -27,7 +27,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 3. **Iniciar el servidor de desarrollo:**
 
    ```sh
-   expo start
+   npx expo start
    ```
 
 4. **Abrir la aplicación en un dispositivo o emulador:**
