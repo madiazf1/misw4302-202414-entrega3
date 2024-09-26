@@ -46,8 +46,8 @@ Este proyecto consiste en dos aplicaciones que se explican a continuación:
 
 ## Instalación y ejecución de aplicaciones 
 
-* Aplicación web: las instrucciones de instalación de ejecución de la aplicación web las encuetra aquí.
-* Aplicación móvil: las instrucciones de instalación de ejecución de la aplicación móvil las encuetra aquí.
+* Aplicación web: las instrucciones de instalación de ejecución de la aplicación web las encuetra [aqui](https://github.com/madiazf1/misw4302-202414-entrega3/blob/main/web/maqueta-web/README.md).
+* Aplicación móvil: las instrucciones de instalación de ejecución de la aplicación móvil las encuetra [aquí](https://github.com/madiazf1/misw4302-202414-entrega3/blob/main/mobile/maqueta-movil/README.md).
 
 ## Autores
 * Mateo Andrés Díaz Forero: ma.diazf1@uniandes.edu.co
