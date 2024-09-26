@@ -1,4 +1,5 @@
 import * as React from "react";
+import { AppRegistry } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -10,6 +11,7 @@ import CreateTraditional from "./screens/CreateTraditional";
 import EditAlarm from "./screens/EditAlarm";
 import ConstructionPage from "./screens/ConstructionPage";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { name as appName } from './app.json';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -112,3 +114,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+AppRegistry.registerComponent(appName, () => App);
