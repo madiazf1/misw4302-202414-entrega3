@@ -1,0 +1,204 @@
+/* Import Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.user-settings-component .navbar {
+    width: 61px;
+    background-color: #4C7573;
+    padding: 0px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.user-settings-component .image-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-settings-component mat-list {
+    position: absolute;
+    top: 50px;
+}
+
+.user-settings-component mat-list-item {
+    height: 45px !important;
+    padding-left: 17px;
+}
+
+.user-settings-component .text-container {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.user-settings-component .overlay-text {
+    font-size: 12px;
+    text-align: center;
+    color: #e2e2e2;
+    font-weight: 580;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
+
+.user-settings-component mat-card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.user-settings-component mat-card-title {
+    font-size: 24px !important;
+    padding-bottom: 60px;
+}
+
+.user-settings-component mat-card-header.userSettingsTitle {
+    padding-top: 0px !important;
+}
+
+.user-settings-component mat-card-header.deleteUserAccountTitle {
+    padding: 0px !important;
+}
+
+.user-settings-component mat-card.logoTitle {
+    margin-left: 420px;
+}
+
+.user-settings-component mat-card.userSettingsCard {
+    position: absolute;
+    margin-left: 420px;
+    top: 180px;
+}
+
+.user-settings-component mat-card.deleteUserAccount {
+    position: absolute;
+    margin-left: 1030px;
+    top: 180px;
+    width: 450px;
+}
+
+.user-settings-component mat-card.alertifyTitle {
+    margin-left: 103px;
+    height: 100px;
+    width: 270px;
+    position: relative;
+    top: 20px;
+}
+
+.user-settings-component div.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.user-settings-component button.generalButton {
+    color: white !important;
+    font-family: 'Roboto', sans-serif !important;
+    width: 160px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+    border-radius: 100px !important;
+    white-space: nowrap !important;
+    letter-spacing: 0px !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; 
+}
+
+.user-settings-component button#saveButton {
+    margin-top: 30px;
+    background-color: #005d52 !important;
+}
+
+.user-settings-component button#cancelButton {
+    margin-top: 30px;
+    background-color: #D34F12 !important;
+}
+
+.user-settings-component button#deleteUserAccountButton {
+    margin-top: 38px;
+    background-color: #D34F12 !important;
+}
+
+.user-settings-component mat-form-field {
+    position: relative;
+    width: 345px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.user-settings-component .mdc-line-ripple {
+    --mdc-filled-text-field-focus-active-indicator-color: #4C7573 !important; 
+}
+
+.user-settings-component .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #e2e2e2 !important;
+}
+
+.user-settings-component .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: #5e5e5e !important;
+}
+
+.user-settings-component input {
+    color: #5e5e5e; 
+}
+
+.user-settings-component mat-label.formLabel {
+    color: #5e5e5e;
+}
+
+.user-settings-component mat-hint {
+    color: #c6c6c6;
+}
+
+:root {
+    --mat-datepicker-calendar-container-background-color: #e2e2e2;
+    --mat-datepicker-toggle-active-state-icon-color: #005d52 !important;
+    --mat-datepicker-toggle-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-text-color: #5e5e5e;
+    --mat-datepicker-calendar-body-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-header-text-color: #5e5e5e;
+    --mat-datepicker-calendar-navigation-button-icon-color: #5e5e5e;
+    --mat-datepicker-calendar-date-today-outline-color: #4C7573;
+    --mdc-text-button-label-text-color: #5e5e5e;
+    --mat-datepicker-calendar-date-selected-state-background-color: #005d52;
+    --mat-datepicker-calendar-date-selected-disabled-state-background-color: #6D9D99 !important;
+    --mat-datepicker-calendar-date-focus-state-background-color: #6D9D99 !important;
+    --mat-datepicker-calendar-date-hover-state-background-color: #6D9D99 !important;
+    --mdc-filled-text-field-disabled-container-color: #e2e2e2;
+}
+
+.user-settings-component .mat-datepicker-content {
+    background-color: #e2e2e2 !important;
+}
+
+.user-settings-component .mat-mdc-button.mat-unthemed {
+    --mdc-text-button-label-text-color: #5e5e5e !important;
+}
+
+.user-settings-component .mat-calendar-arrow {
+    --mat-datepicker-calendar-period-button-icon-color: #5e5e5e;
+}
+
+.user-settings-component .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: #6D9D99 !important;
+    color: #fff !important;
+}
+
+.user-settings-component .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-settings-component .overlay img {
+    max-width: 15%;
+    max-height: 15%;
+}

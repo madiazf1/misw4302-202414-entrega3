@@ -1,0 +1,93 @@
+<div class="report-component">
+  <div class="navbar">
+    <mat-list>
+      <mat-list-item>
+        <a [routerLink]="['/report']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/menuIcon.png" 
+            alt="menu"
+            id="menuIcon"
+          />
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a [routerLink]="['/user-settings']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/userSettingsIcon.png" 
+            alt="user settings"
+            id="userSettingsIcon"
+          />
+        </a>
+      </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Gestión Cuenta</div>
+      </div>
+      <mat-list-item>
+        <a [routerLink]="['/login']" class="image-button">
+          <img mat-card-image 
+            src="assets/images/closeSessionIcon.png" 
+            alt="close session"
+            id="closeSessionIcon"
+          />
+        </a>
+      </mat-list-item>
+      <div class="text-container">
+        <div class="overlay-text">Cerrar Sesión</div>
+      </div>
+    </mat-list>
+  </div>
+
+  <mat-card>
+      <img
+      class="alertify-title" 
+      src="assets/images/Alertify2.png" 
+      alt="Alertify2" 
+      />
+  </mat-card>
+
+  <mat-card id="table">
+      <mat-card-header class="mx-auto">
+          <mat-card-title>Reporte - Histórico de Pagos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+              <!-- Column Definitions -->
+              <ng-container matColumnDef="col1">
+              <th mat-header-cell *matHeaderCellDef> Nombre </th>
+              <td mat-cell *matCellDef="let element"> {{element.col1}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="col2">
+              <th mat-header-cell *matHeaderCellDef> Fecha de Pago </th>
+              <td mat-cell *matCellDef="let element"> {{element.col2}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="col3">
+              <th mat-header-cell *matHeaderCellDef> Tipo de obligación </th>
+              <td mat-cell *matCellDef="let element"> {{element.col3}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="col4">
+              <th mat-header-cell *matHeaderCellDef> Valor </th>
+              <td mat-cell *matCellDef="let element"> {{element.col4}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="col5">
+              <th mat-header-cell *matHeaderCellDef> Banco </th>
+              <td mat-cell *matCellDef="let element"> {{element.col5}} </td>
+              </ng-container>
+
+              <!-- Action Column with Button -->
+              <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef> Ver Detalle </th>
+              <td mat-cell *matCellDef="let element">
+                  <button mat-button (click)="navigateToComponent()">Ingresar</button>
+              </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+      </mat-card-content>
+  </mat-card>
+</div>
