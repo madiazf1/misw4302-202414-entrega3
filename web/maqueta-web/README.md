@@ -10,7 +10,13 @@ Before deploying the application as a dev server, please run the following comma
 npm install
 ```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+After making sure the command above runs with no error, then run the following command.
+
+```
+ng serve
+```
+
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
