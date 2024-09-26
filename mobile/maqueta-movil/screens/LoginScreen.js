@@ -59,7 +59,7 @@ export default function LoginScreen({ navigation }) {
             style={styles.buttons}
             labelStyle={{ color: "#E2E2E2" }}
             title="Crear cuenta"
-            onPress={() => alert("Ruta de navegación en contrucción")}
+            onPress={() => alert("Ruta de navegación en construcción")}
           >
             Crear cuenta
           </Button>
